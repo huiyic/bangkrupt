@@ -53,11 +53,8 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
-        Written by{" "}
-        <strong>
-          <a href={`https://github.com/${social.github}`}>{author}</a>
-        </strong>
+      <p style={{ maxWidth: 310 }}>
+        Written by <a href={`https://github.com/${social.github}`}>{author}</a>
       </p>
     </div>
   )
