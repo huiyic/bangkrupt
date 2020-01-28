@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2020-01-28"
-description: "New Year, New Me"
+description: "Not the last post"
 ---
 
 ### A Haiku - Hailo world
