@@ -73,6 +73,15 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          "*.png": ["Cache-Control: public, max-age=604800"],
+          "*.[css,jpg]": ["Cache-Control: public, max-age=1000"],
+        }, // option to add more headers. `Link` headers are transformed by the below criteria
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
