@@ -77,9 +77,10 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          "*.png": ["Cache-Control: public, max-age=604800"],
-          "*.[css,jpg]": ["Cache-Control: public, max-age=1000"],
-        }, // option to add more headers. `Link` headers are transformed by the below criteria
+          "/*.[png,jpg,svg]": ["Cache-Control: public, max-age=604800"],
+          "/*.[css,js,json]": ["Cache-Control: public, max-age=604800"],
+        },
+        mergeCachingHeaders: false, // don't use default cache headers
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
