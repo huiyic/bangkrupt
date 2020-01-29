@@ -12,4 +12,4 @@ description: "Not the last post"
 >
 > starts with 'Hello World'
 
-Hopefully this isn't the last post.
+This is the first and last post.
